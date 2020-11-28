@@ -46,9 +46,10 @@ void compileDeclarations(void){
         compileSubDecls();
         compileDeclarations();
     }
-    else{
-         error(ERR_DECLARATION, lookAhead->lineNo, lookAhead->colNo);
-    }
+    // else{
+    //     error(ERR_DECLARATION, lookAhead->lineNo, lookAhead->colNo);
+    // }
+     
    
 }
 void compileProgram(void) {
@@ -76,22 +77,7 @@ void compileBlock(void) {
 //         compileBlock3();
 //     } else
 //         compileBlock3();
-// }
-
-// void compileBlock3(void) {
-//     if (lookAhead->tokenType == KW_VAR) {
-//         eat(KW_VAR);
-//         compileVarDecl();
-//         compileVarDecls();
-//         compileBlock4();
-//     } else
-//         compileBlock4();
-// }
-
-// void compileBlock4(void) {
-//     compileSubDecls();
-//     compileBlock5();
-// }
+// 
 
 void compileBlock2(void) {
     eat(KW_BEGIN);

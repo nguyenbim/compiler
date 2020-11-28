@@ -1,5 +1,5 @@
 Program Example1; (* Example 1 *)
-
-asdadadadasd
+var n : INTEGER;
+const a=1;
 Begin
 End. (* Example 1 *)
